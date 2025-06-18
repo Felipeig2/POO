@@ -27,7 +27,11 @@ public abstract class Carta {
 		Cartas.get(0).invocar();
 		Cartas.get(1).invocar();
 		Cartas.get(2).invocar();
-		
+
+        for(Carta v : Cartas){
+            v.invocar();
+            v.toString();
+        }
 				
 	}
 }
