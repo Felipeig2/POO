@@ -1,14 +1,17 @@
 package pipe;
 
 public class ProductoPerecedero extends Producto {
-
-	public ProductoPerecedero(int id, String nombre, int precio) {
+    int diasVencer;
+	public ProductoPerecedero(int id, String nombre, int precio, int diasVencer) {
 		super(id, nombre, precio);
 	}
 
 	@Override
 	public void calcularPrecioFinal() {
-		// TODO Auto-generated method stub
+        if(diasVencer < 10) {
+            precio *= 0.8;
+        }
+    }
 		
 	}
 
